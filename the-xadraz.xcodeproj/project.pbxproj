@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		911F00D229157CB200010350 /* the_xadrazApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F00D129157CB200010350 /* the_xadrazApp.swift */; };
-		911F00D429157CB200010350 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F00D329157CB200010350 /* ContentView.swift */; };
+		911F00D429157CB200010350 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F00D329157CB200010350 /* FirstView.swift */; };
 		911F00D629157CB200010350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F00D529157CB200010350 /* Assets.xcassets */; };
 		911F00D929157CB200010350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F00D829157CB200010350 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		911F00CE29157CB200010350 /* the-xadraz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-xadraz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		911F00D129157CB200010350 /* the_xadrazApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_xadrazApp.swift; sourceTree = "<group>"; };
-		911F00D329157CB200010350 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		911F00D329157CB200010350 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		911F00D529157CB200010350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911F00D829157CB200010350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				911F00D129157CB200010350 /* the_xadrazApp.swift */,
-				911F00D329157CB200010350 /* ContentView.swift */,
+				911F00D329157CB200010350 /* FirstView.swift */,
 				911F00D529157CB200010350 /* Assets.xcassets */,
 				911F00D729157CB200010350 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911F00D429157CB200010350 /* ContentView.swift in Sources */,
+				911F00D429157CB200010350 /* FirstView.swift in Sources */,
 				911F00D229157CB200010350 /* the_xadrazApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
