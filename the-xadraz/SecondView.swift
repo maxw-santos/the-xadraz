@@ -10,7 +10,7 @@ import SwiftUI
 struct SecondView: View {
     var body: some View {
         ZStack{
-            Image()//Background
+            Image("tela2")//Background
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
