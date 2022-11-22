@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
-        Text(")
+        ZStack{
+            Image()//Background
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            
+        }
             }
 }
 
