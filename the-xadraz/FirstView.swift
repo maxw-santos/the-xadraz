@@ -9,14 +9,13 @@ import SwiftUI
 
 struct FirstView: View {
     var body: some View {
-        VStack {
-          Text("")
-                .background( Image("LoadTela")
+        ZStack {
+                Image("LoadTela")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
 
-                        )
+                    
 
         }
         .padding()
