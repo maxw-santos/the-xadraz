@@ -8,28 +8,20 @@
 import SwiftUI
 
 struct FirstView: View {
+    
+    
     var body: some View {
         ZStack {
-                Image("LoadTela")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-
-                    
-
+                    splashview()        }
+            }
         }
-        .padding()
-
-    }
-
-}
 
 struct FirstView_Previews: PreviewProvider {
     
     static var previews: some View {
-
+        
         FirstView()
-
+        
     }
-
+    
 }
