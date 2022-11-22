@@ -12,9 +12,9 @@ struct FirstView: View {
     
     var body: some View {
         ZStack {
-                    splashview()        }
-            }
-        }
+            splashview()        }
+    }
+}
 
 struct FirstView_Previews: PreviewProvider {
     

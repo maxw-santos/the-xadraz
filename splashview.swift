@@ -20,10 +20,10 @@ struct splashview: View {
             } else {
                 ZStack{
                     SecondView()
-    
+                    
                     
                 }
-
+                
             }
         }
         .padding()

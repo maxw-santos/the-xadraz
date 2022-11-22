@@ -16,7 +16,7 @@ struct SecondView: View {
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             
         }
-            }
+    }
 }
 
 struct SecondView_Previews: PreviewProvider {
