@@ -12,7 +12,9 @@ struct FirstView: View {
     
     var body: some View {
         ZStack {
-            splashview()        }
+            splashview()
+            
+        }
     }
 }
 
