@@ -18,12 +18,12 @@ struct FirstView: View {
     }
 }
 
-struct FirstView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        
-        FirstView()
-        
-    }
-    
-}
+//struct FirstView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//
+//        FirstView()
+//
+//    }
+//
+//}
