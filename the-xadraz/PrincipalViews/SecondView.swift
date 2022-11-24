@@ -19,8 +19,11 @@ struct SecondView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            VStack{
+                SelectionPowerButton()
+                SelectionPowerButton()
+            }
             
-            SelectionPowerButton()
             
         }
         

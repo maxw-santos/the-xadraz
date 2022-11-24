@@ -16,10 +16,9 @@ struct PowerSelectionRowView: View {
 
     var body: some View {
 
-        HStack(spacing: 20){
+        HStack(){
 
             Image(model.iconName)
-
             Text(model.title)
 
         }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SelectionPowerButton: View {
     var body: some View {
-        VStack {
             ZStack{
                 Rectangle()
                     .fill(.white)
@@ -17,26 +16,12 @@ struct SelectionPowerButton: View {
                     .opacity(0.7)
                     .frame(width:300, height:100)
                     .shadow(radius: 35)
-
-                PowerSelectionView()
+                
+                    PowerSelectionView()
                     
                 
             }
-            
-            ZStack{
-                Rectangle()
-                    .fill(.white)
-                    .cornerRadius(200.0)
-                    .opacity(0.7)
-                    .frame(width:300, height:100)
-                    .shadow(radius: 35)
-
-                PowerSelectionView()
-                    
-                
-            }
-            
-        }
+                        
     }
 }
 

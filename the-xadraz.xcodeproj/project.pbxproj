@@ -65,8 +65,8 @@
 		911F00D029157CB200010350 /* the-xadraz */ = {
 			isa = PBXGroup;
 			children = (
-				C6561D0D292FA06300646C81 /* Buttons */,
 				911F00D129157CB200010350 /* the_xadrazApp.swift */,
+				C6561D0D292FA06300646C81 /* Buttons */,
 				C6561D0C292F985E00646C81 /* PrincipalViews */,
 				91A0636A292F954400032065 /* PowerSelectionView */,
 				911F00D529157CB200010350 /* Assets.xcassets */,
