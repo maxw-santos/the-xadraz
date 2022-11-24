@@ -13,22 +13,30 @@ struct SecondView: View {
     
     var body: some View {
         
-        ZStack{
+        NavigationView {
             
-            Image("tela2")//Background
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-            VStack{
-                SelectionPowerButton()
-                SelectionPowerButton()
+            ZStack{
+                Image("tela2")//Background
+                    .resizable()
+                    .ignoresSafeArea()
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                VStack {
+                    SelectionPowerButton()
+                    SelectionPowerButton()
+                    HStack {
+                        NavigationLink(destination: thirdview()) {
+                            Image("PlayIcon")
+                        }
+                        
+                    }
+                }
             }
-            
-            
-        }
+        }.ignoresSafeArea()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         
     }
-    
 }
 
 
