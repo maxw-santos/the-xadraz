@@ -34,11 +34,13 @@ struct SecondView: View {
                     
                     
                     HStack {
+                        Image ("ChessClock")
+                            .position(x: 70 , y: 50 )
                         NavigationLink(destination: thirdview()) {
                             Image("PlayIcon")
                             
                         }
-                        .position(x : 320 ,  y : 45)
+                        .position(x : 120 ,  y : 50)
                     }
                 }
                 

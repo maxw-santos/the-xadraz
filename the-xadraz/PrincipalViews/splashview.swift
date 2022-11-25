@@ -38,12 +38,12 @@ struct splashview: View {
     
 }
 
-//struct splashview_Previews: PreviewProvider {
-//
-//    static var previews: some View {
-//
-//        FirstView()
-//
-//    }
-//
-//}
+struct splashview_Previews: PreviewProvider {
+
+    static var previews: some View {
+
+        FirstView()
+
+    }
+
+}
