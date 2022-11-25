@@ -18,6 +18,7 @@
 		91A06370292F964E00032065 /* PowerSelectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636F292F964E00032065 /* PowerSelectionRowView.swift */; };
 		C6561D10292FA0E000646C81 /* SelectionPowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6561D0F292FA0E000646C81 /* SelectionPowerButton.swift */; };
 		C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FCFEE292D407C00D0004A /* SecondView.swift */; };
+		C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		91A0636F292F964E00032065 /* PowerSelectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionRowView.swift; sourceTree = "<group>"; };
 		C6561D0F292FA0E000646C81 /* SelectionPowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPowerButton.swift; sourceTree = "<group>"; };
 		C67FCFEE292D407C00D0004A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */,
 				91A0636D292F961000032065 /* PowerSelectionView.swift */,
 				91A0636F292F964E00032065 /* PowerSelectionRowView.swift */,
+				C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */,
 			);
 			path = PowerSelectionView;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */,
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
 				91970040292D5BC00025C9FA /* thirdview.swift in Sources */,
+				C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */,
 				91A0636E292F961000032065 /* PowerSelectionView.swift in Sources */,
 				91A06370292F964E00032065 /* PowerSelectionRowView.swift in Sources */,
 				C6561D10292FA0E000646C81 /* SelectionPowerButton.swift in Sources */,
