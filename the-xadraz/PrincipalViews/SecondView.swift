@@ -24,17 +24,17 @@ struct SecondView: View {
                 VStack {
                     Image("tex1")
                         .position(x : 150 , y : 90 )
-                    SelectionPowerButton()
+                    SelectionPowerPlayer1Button()
                         .position(x : 200, y: 50)
                     Image("tex2")
                         .position(x : 150 , y : 35 )
                     
-                    SelectionPowerButton()
+                    SelectionPowerPlayer2Button()
                         .position(x : 200, y: 50 )
                     
                     
                     HStack {
-                        Image ("ChessClock")
+                        SelectionTimeButtons()
                             .position(x: 70 , y: 50 )
                         NavigationLink(destination: thirdview()) {
                             Image("PlayIcon")

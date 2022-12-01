@@ -1,13 +1,13 @@
 //
-//  SelectionPowerButton.swift
+//  SelectionPowerPlayer2Button.swift
 //  the-xadraz
 //
-//  Created by Raul Braga on 24/11/22.
+//  Created by Raul Braga on 01/12/22.
 //
 
 import SwiftUI
 
-struct SelectionPowerButton: View {
+struct SelectionPowerPlayer2Button: View {
     var body: some View {
             ZStack{
                 Rectangle()
@@ -17,7 +17,7 @@ struct SelectionPowerButton: View {
                     .frame(width:300, height:100)
                     .shadow(radius: 35)
                 
-                    PowerSelectionView()
+                    PowerSelectionPlayer1View()
                     
                 
             }
@@ -25,8 +25,8 @@ struct SelectionPowerButton: View {
     }
 }
 
-struct SelectionPowerButton_Previews: PreviewProvider {
+struct SelectionPowerPlayer2Button_Previews: PreviewProvider {
     static var previews: some View {
-        SelectionPowerButton()
+        SelectionPowerPlayer2Button()
     }
 }

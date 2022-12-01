@@ -8,10 +8,9 @@ import SwiftUI
 
 
 
-struct PowerSelectionView: View {
+struct PowerSelectionPlayer1View: View {
 
-    @State private var selectedPower = ""
-
+    @State private var selectedPower: Int = 1
     
 
     var rowPowers: [PowerSelectionRow] = [
@@ -20,7 +19,8 @@ struct PowerSelectionView: View {
 
             iconName: "Cannon" ,
 
-            title: "Bombardeio de Guerra"
+            title: .bombardeioDeGuerra
+            
 
         ),
 
@@ -28,7 +28,8 @@ struct PowerSelectionView: View {
 
             iconName: "CampoFechado",
 
-            title: "Campo Fechado"
+            title: .campoFechado
+            
 
         ),
 
@@ -36,7 +37,8 @@ struct PowerSelectionView: View {
 
             iconName: "AtaqueAoPosto",
 
-            title: "Ataque ao Posto"
+            title: .ataqueAoPosto
+        
 
         ),
 
@@ -44,7 +46,8 @@ struct PowerSelectionView: View {
 
             iconName: "AcordoDeMercenarios",
 
-            title: "Acordo de Mercenários"
+            title: .acordoDeMercenarios
+            
 
         )
 
@@ -56,26 +59,18 @@ struct PowerSelectionView: View {
 
         VStack{
 
-                Picker("Selecione o poder do player 1", selection: $selectedPower){
+            Picker("Selecione o poder do player", selection: $selectedPower){
 
-                        ForEach(rowPowers, id: \.title) { model in
-
-                           PowerSelectionRowView(model: model)
-
-                    }
+                ForEach(rowPowers, id: \.title.rawValue) { model in
+PowerSelectionRowPlayer1View(model: model)
+                            
+            }
 
                     
-
-                }.pickerStyle(.automatic)
-
-            
-
-            
-
+                    
+            }.pickerStyle(.automatic)
         }
-
     }
-
 }
 
 
@@ -84,7 +79,7 @@ struct PowerSelectionView_Previews: PreviewProvider {
 
     static var previews: some View {
 
-        PowerSelectionView()
+        PowerSelectionPlayer1View()
 
     }
 
