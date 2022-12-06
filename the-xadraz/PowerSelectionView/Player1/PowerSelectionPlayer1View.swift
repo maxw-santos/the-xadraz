@@ -10,8 +10,8 @@ import SwiftUI
 
 struct PowerSelectionPlayer1View: View {
 
-    @State private var selectedPower: Int = 1
-    
+    @State var selectedPower: powers = .bombardeioDeGuerra
+
 
     var rowPowers: [PowerSelectionRow] = [
 
@@ -61,16 +61,17 @@ struct PowerSelectionPlayer1View: View {
 
             Picker("Selecione o poder do player", selection: $selectedPower){
 
-                ForEach(rowPowers, id: \.title.rawValue) { model in
+                ForEach(rowPowers, id: \.title) { model in
 PowerSelectionRowPlayer1View(model: model)
                             
             }
-
                     
                     
             }.pickerStyle(.automatic)
         }
     }
+    
+    
 }
 
 
