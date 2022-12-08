@@ -16,10 +16,12 @@
 		91A0636C292F95DB00032065 /* PowerSelectionRowModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */; };
 		91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */; };
 		91A06370292F964E00032065 /* PowerSelectionRowPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */; };
+		C62E040C2942586300A480F6 /* PowerOfPlayer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */; };
+		C62E040E2942587B00A480F6 /* PowerOfPlayer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */; };
+		C62E0410294258D500A480F6 /* PowerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040F294258D500A480F6 /* PowerEnum.swift */; };
 		C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */; };
 		C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FCFEE292D407C00D0004A /* SecondView.swift */; };
 		C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F154E2939248900DD5DA7 /* GlobalVariables.swift */; };
-		C68F1551293925E600DD5DA7 /* PowerSelectFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F1550293925E600DD5DA7 /* PowerSelectFuncs.swift */; };
 		C68F15532939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */; };
 		C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */; };
 		C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15562939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift */; };
@@ -44,10 +46,12 @@
 		91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionRowModels.swift; sourceTree = "<group>"; };
 		91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPlayer1View.swift; sourceTree = "<group>"; };
 		91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionRowPlayer1View.swift; sourceTree = "<group>"; };
+		C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayer1.swift; sourceTree = "<group>"; };
+		C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayer2.swift; sourceTree = "<group>"; };
+		C62E040F294258D500A480F6 /* PowerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerEnum.swift; sourceTree = "<group>"; };
 		C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPowerPlayer1Button.swift; sourceTree = "<group>"; };
 		C67FCFEE292D407C00D0004A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		C68F154E2939248900DD5DA7 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
-		C68F1550293925E600DD5DA7 /* PowerSelectFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectFuncs.swift; sourceTree = "<group>"; };
 		C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPowerPlayer2View.swift; sourceTree = "<group>"; };
 		C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPlayer2View.swift; sourceTree = "<group>"; };
 		C68F15562939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPowerPlayer2Button.swift; sourceTree = "<group>"; };
@@ -118,7 +122,7 @@
 				C68F156129393DC700DD5DA7 /* Player1 */,
 				91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */,
 				C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */,
-				C68F1550293925E600DD5DA7 /* PowerSelectFuncs.swift */,
+				C62E040F294258D500A480F6 /* PowerEnum.swift */,
 			);
 			path = PowerSelectionView;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 			children = (
 				91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */,
 				91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */,
+				C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */,
 			);
 			path = Player1;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			children = (
 				C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */,
 				C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */,
+				C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */,
 			);
 			path = Player2;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62E040E2942587B00A480F6 /* PowerOfPlayer2.swift in Sources */,
 				C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */,
 				C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */,
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
@@ -276,6 +283,7 @@
 				C6E4923B2937ECB400FCB04D /* SelectionTimeButtons.swift in Sources */,
 				C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */,
 				C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */,
+				C62E0410294258D500A480F6 /* PowerEnum.swift in Sources */,
 				C6E492372937E64E00FCB04D /* TimeSelectionView.swift in Sources */,
 				91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */,
 				C68F156029393B8B00DD5DA7 /* TableView.swift in Sources */,
@@ -287,7 +295,7 @@
 				C68F155C29393B5F00DD5DA7 /* BoardView2.swift in Sources */,
 				91A0636C292F95DB00032065 /* PowerSelectionRowModels.swift in Sources */,
 				C6E492392937E81D00FCB04D /* TimeSelectionRowView.swift in Sources */,
-				C68F1551293925E600DD5DA7 /* PowerSelectFuncs.swift in Sources */,
+				C62E040C2942586300A480F6 /* PowerOfPlayer1.swift in Sources */,
 				C68F155A29393B0500DD5DA7 /* BoardView.swift in Sources */,
 				911F00D429157CB200010350 /* FirstView.swift in Sources */,
 				911F00D229157CB200010350 /* the_xadrazApp.swift in Sources */,

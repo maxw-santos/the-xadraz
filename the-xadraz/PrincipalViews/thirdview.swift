@@ -9,8 +9,8 @@ import SwiftUI
 
 struct thirdview: View {
     
-    var powerPlayer1 = PowerSelectionPlayer1View().selectedPower
-    var powerPlayer2 = PowerSelectionPlayer2View().selectedPower
+    @EnvironmentObject private var powerOfPlayer1: PowerOfPlayer1
+    @EnvironmentObject private var powerOfPlayer2: PowerOfPlayer2
     
     var body: some View {
         
@@ -38,24 +38,12 @@ struct thirdview: View {
                                    .position(x: 370, y: 140)
                                    .ignoresSafeArea()
                                
-                               switch(powerPlayer2){
-                               case .bombardeioDeGuerra:
-                                       Image("Cannon")
-                                            .position(x: 370, y: 140)
-                               case .acordoDeMercenarios:
-                                       Image("AcordoDeMercenarios")
-                                            .position(x: 370, y: 140)
-                               case .campoFechado:
-                                       Image("CampoFechado")
-                                            .position(x: 370, y: 140)
-                               case .ataqueAoPosto:
-                                        Image("AtaqueAoPosto")
-                                            .position(x: 370, y: 140)
+                               Image(nameOfPowers[powerOfPlayer2.Power.rawValue]!)
                                    
                                }
                            }
-                       }
                 )
+                       }
                 
                 TableView()
                     .padding(50)
@@ -70,21 +58,8 @@ struct thirdview: View {
                                        .position(x: 120, y: 30)
                                        .ignoresSafeArea()
                                    
-                                   switch(powerPlayer1){
-                                   case .bombardeioDeGuerra:
-                                           Image("Cannon")
-                                                .position(x: 120, y: 30)
-                                   case .acordoDeMercenarios:
-                                           Image("AcordoDeMercenarios")
-                                                .position(x: 120, y: 30)
-                                   case .campoFechado:
-                                           Image("CampoFechado")
-                                                .position(x: 120, y: 30)
-                                   case .ataqueAoPosto:
-                                            Image("AtaqueAoPosto")
-                                                .position(x: 120, y: 30)
-                                            
-                                   }
+                                   Image(nameOfPowers[powerOfPlayer1.Power.rawValue]!)
+                                   
                                }
                            }
                 )
@@ -106,5 +81,4 @@ struct thirdview: View {
         }
     }
     
-    
-}
+

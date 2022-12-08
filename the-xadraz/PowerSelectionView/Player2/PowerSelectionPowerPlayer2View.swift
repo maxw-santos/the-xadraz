@@ -15,17 +15,10 @@ struct PowerSelectionRowPlayer2View: View {
     var body: some View {
 
         VStack{
-            
-            Button(
-                action: {
-                    powerPlayer2(power: model.title)
-            },
-                label: {
                 HStack{
                     Text(nameOfPowers[model.title.rawValue]!)
                     Image(model.iconName)
                 }
-            })
             
         }
             

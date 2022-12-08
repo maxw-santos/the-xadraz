@@ -11,55 +11,16 @@ import SwiftUI
 struct PowerSelectionPlayer1View: View {
 
     @State var selectedPower: powers = .bombardeioDeGuerra
-
-
-    var rowPowers: [PowerSelectionRow] = [
-
-        PowerSelectionRow(
-
-            iconName: "Cannon" ,
-
-            title: .bombardeioDeGuerra
-            
-
-        ),
-
-        PowerSelectionRow(
-
-            iconName: "CampoFechado",
-
-            title: .campoFechado
-            
-
-        ),
-
-        PowerSelectionRow(
-
-            iconName: "AtaqueAoPosto",
-
-            title: .ataqueAoPosto
-        
-
-        ),
-
-        PowerSelectionRow(
-
-            iconName: "AcordoDeMercenarios",
-
-            title: .acordoDeMercenarios
-            
-
-        )
-
-    ]
-
+    @EnvironmentObject private var powerOfPlayer1: PowerOfPlayer1
+    
+    
     var body: some View {
 
         
 
         VStack{
 
-            Picker("Selecione o poder do player", selection: $selectedPower){
+            Picker("Selecione o poder do player", selection: $powerOfPlayer1.Power){
 
                 ForEach(rowPowers, id: \.title) { model in
 PowerSelectionRowPlayer1View(model: model)

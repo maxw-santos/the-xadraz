@@ -17,7 +17,7 @@ struct SelectionPowerPlayer2Button: View {
                     .frame(width:300, height:100)
                     .shadow(radius: 35)
                 
-                    PowerSelectionPlayer1View()
+                    PowerSelectionPlayer2View()
                     
                 
             }
