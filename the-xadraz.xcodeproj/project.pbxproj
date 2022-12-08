@@ -11,6 +11,10 @@
 		911F00D429157CB200010350 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F00D329157CB200010350 /* FirstView.swift */; };
 		911F00D629157CB200010350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F00D529157CB200010350 /* Assets.xcassets */; };
 		911F00D929157CB200010350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F00D829157CB200010350 /* Preview Assets.xcassets */; };
+		9135E370294284CD00380473 /* BoardView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E36F294284CD00380473 /* BoardView3.swift */; };
+		9135E372294285CD00380473 /* BoardView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E371294285CD00380473 /* BoardView4.swift */; };
+		9135E3742942860300380473 /* BoardView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E3732942860300380473 /* BoardView5.swift */; };
+		9135E3762942862E00380473 /* BoardView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E3752942862E00380473 /* BoardView6.swift */; };
 		913EB1C4292D4A3800965B69 /* splashview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1C3292D4A3800965B69 /* splashview.swift */; };
 		91970040292D5BC00025C9FA /* thirdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197003F292D5BC00025C9FA /* thirdview.swift */; };
 		91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */; };
@@ -39,6 +43,10 @@
 		911F00D329157CB200010350 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		911F00D529157CB200010350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911F00D829157CB200010350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9135E36F294284CD00380473 /* BoardView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView3.swift; sourceTree = "<group>"; };
+		9135E371294285CD00380473 /* BoardView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardView4.swift; path = ../../../BoardView4.swift; sourceTree = "<group>"; };
+		9135E3732942860300380473 /* BoardView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardView5.swift; path = ../../../BoardView5.swift; sourceTree = "<group>"; };
+		9135E3752942862E00380473 /* BoardView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardView6.swift; path = ../../../BoardView6.swift; sourceTree = "<group>"; };
 		913EB1C3292D4A3800965B69 /* splashview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashview.swift; sourceTree = "<group>"; };
 		9197003F292D5BC00025C9FA /* thirdview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdview.swift; sourceTree = "<group>"; };
 		91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPlayer1View.swift; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 			children = (
 				C68F155929393B0500DD5DA7 /* BoardView.swift */,
 				C68F155B29393B5F00DD5DA7 /* BoardView2.swift */,
+				9135E36F294284CD00380473 /* BoardView3.swift */,
+				9135E371294285CD00380473 /* BoardView4.swift */,
+				9135E3732942860300380473 /* BoardView5.swift */,
+				9135E3752942862E00380473 /* BoardView6.swift */,
 				C68F155F29393B8B00DD5DA7 /* TableView.swift */,
 			);
 			path = BoardView;
@@ -270,9 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */,
+				9135E370294284CD00380473 /* BoardView3.swift in Sources */,
+				9135E372294285CD00380473 /* BoardView4.swift in Sources */,
 				C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */,
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
 				91970040292D5BC00025C9FA /* thirdview.swift in Sources */,
+				9135E3762942862E00380473 /* BoardView6.swift in Sources */,
 				C6E4923B2937ECB400FCB04D /* SelectionTimeButtons.swift in Sources */,
 				C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */,
 				C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */,
@@ -290,6 +305,7 @@
 				C62E040C2942586300A480F6 /* PowerOfPlayers.swift in Sources */,
 				C68F155A29393B0500DD5DA7 /* BoardView.swift in Sources */,
 				911F00D429157CB200010350 /* FirstView.swift in Sources */,
+				9135E3742942860300380473 /* BoardView5.swift in Sources */,
 				911F00D229157CB200010350 /* the_xadrazApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

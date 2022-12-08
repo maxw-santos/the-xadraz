@@ -9,7 +9,8 @@ import SwiftUI
 
 struct BoardView2: View {
 
-    
+    @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
+
 
     let numbers = Array(1...8)
 
@@ -31,7 +32,7 @@ struct BoardView2: View {
 
                     
 
-                    print(number)
+                    buttonsStates[number - 1].toggle()
 
                     
 
@@ -40,22 +41,41 @@ struct BoardView2: View {
                     
 
                     ZStack {
-
+                        
                         if number % 2 == 0 {
+                            if !buttonsStates[number - 1]{
+                                
+                                Image("pbhw")
+                                
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else {
+                                Image("dbhw")
+                                    .aspectRatio(1, contentMode: .fit)
 
-                            Image("white")
-
-                                .aspectRatio(1, contentMode: .fit)
-
-                        } else {
-
-                            Image("black")
-
-                                .aspectRatio(1, contentMode: .fit)
-
+                            }
                         }
-
+                        if number % 2 != 0 {
+                            if !buttonsStates[number - 1]{
+                                Image("pbhb")
+                                
+                                    .aspectRatio(1, contentMode: .fit)
+                                
+                            } else {
+                                Image("dbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                                
+                            }
+                        }
                     }
+
+//                            Image("pbhb")
+//
+//                                .aspectRatio(1, contentMode: .fit)
+//
+//                        }
+//
+//                    }
 
                     
 

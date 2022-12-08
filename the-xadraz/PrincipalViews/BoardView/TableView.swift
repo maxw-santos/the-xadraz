@@ -18,16 +18,19 @@ struct TableView: View {
 
             Image("table")
 
-            
-
             VStack(spacing: 0.0){
-
-                ForEach(0..<4) { _ in
-
+                   
                     BoardView()
 
                     BoardView2()
+                ForEach( 1..<3 ){ _ in
+                    BoardView3()
+                    BoardView4()
 
+                }
+                BoardView5()
+                BoardView6()
+                    
                 }
 
             }
@@ -35,8 +38,6 @@ struct TableView: View {
         }
 
     }
-
-}
 
 
 
