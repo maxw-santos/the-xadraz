@@ -13,11 +13,9 @@
 		911F00D929157CB200010350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F00D829157CB200010350 /* Preview Assets.xcassets */; };
 		913EB1C4292D4A3800965B69 /* splashview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1C3292D4A3800965B69 /* splashview.swift */; };
 		91970040292D5BC00025C9FA /* thirdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197003F292D5BC00025C9FA /* thirdview.swift */; };
-		91A0636C292F95DB00032065 /* PowerSelectionRowModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */; };
 		91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */; };
 		91A06370292F964E00032065 /* PowerSelectionRowPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */; };
-		C62E040C2942586300A480F6 /* PowerOfPlayer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */; };
-		C62E040E2942587B00A480F6 /* PowerOfPlayer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */; };
+		C62E040C2942586300A480F6 /* PowerOfPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040B2942586300A480F6 /* PowerOfPlayers.swift */; };
 		C62E0410294258D500A480F6 /* PowerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040F294258D500A480F6 /* PowerEnum.swift */; };
 		C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */; };
 		C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FCFEE292D407C00D0004A /* SecondView.swift */; };
@@ -43,11 +41,9 @@
 		911F00D829157CB200010350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		913EB1C3292D4A3800965B69 /* splashview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashview.swift; sourceTree = "<group>"; };
 		9197003F292D5BC00025C9FA /* thirdview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdview.swift; sourceTree = "<group>"; };
-		91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionRowModels.swift; sourceTree = "<group>"; };
 		91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPlayer1View.swift; sourceTree = "<group>"; };
 		91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionRowPlayer1View.swift; sourceTree = "<group>"; };
-		C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayer1.swift; sourceTree = "<group>"; };
-		C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayer2.swift; sourceTree = "<group>"; };
+		C62E040B2942586300A480F6 /* PowerOfPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayers.swift; sourceTree = "<group>"; };
 		C62E040F294258D500A480F6 /* PowerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerEnum.swift; sourceTree = "<group>"; };
 		C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPowerPlayer1Button.swift; sourceTree = "<group>"; };
 		C67FCFEE292D407C00D0004A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
@@ -118,9 +114,9 @@
 		91A0636A292F954400032065 /* PowerSelectionView */ = {
 			isa = PBXGroup;
 			children = (
+				C62E040B2942586300A480F6 /* PowerOfPlayers.swift */,
 				C68F156229393DD300DD5DA7 /* Player2 */,
 				C68F156129393DC700DD5DA7 /* Player1 */,
-				91A0636B292F95DB00032065 /* PowerSelectionRowModels.swift */,
 				C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */,
 				C62E040F294258D500A480F6 /* PowerEnum.swift */,
 			);
@@ -171,7 +167,6 @@
 			children = (
 				91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */,
 				91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */,
-				C62E040B2942586300A480F6 /* PowerOfPlayer1.swift */,
 			);
 			path = Player1;
 			sourceTree = "<group>";
@@ -181,7 +176,6 @@
 			children = (
 				C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */,
 				C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */,
-				C62E040D2942587B00A480F6 /* PowerOfPlayer2.swift */,
 			);
 			path = Player2;
 			sourceTree = "<group>";
@@ -275,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62E040E2942587B00A480F6 /* PowerOfPlayer2.swift in Sources */,
 				C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */,
 				C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */,
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
@@ -293,9 +286,8 @@
 				C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */,
 				C6E492352937E5AB00FCB04D /* TimeSelectionRowModels.swift in Sources */,
 				C68F155C29393B5F00DD5DA7 /* BoardView2.swift in Sources */,
-				91A0636C292F95DB00032065 /* PowerSelectionRowModels.swift in Sources */,
 				C6E492392937E81D00FCB04D /* TimeSelectionRowView.swift in Sources */,
-				C62E040C2942586300A480F6 /* PowerOfPlayer1.swift in Sources */,
+				C62E040C2942586300A480F6 /* PowerOfPlayers.swift in Sources */,
 				C68F155A29393B0500DD5DA7 /* BoardView.swift in Sources */,
 				911F00D429157CB200010350 /* FirstView.swift in Sources */,
 				911F00D229157CB200010350 /* the_xadrazApp.swift in Sources */,

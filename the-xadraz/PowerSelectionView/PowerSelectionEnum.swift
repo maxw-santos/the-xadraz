@@ -8,16 +8,16 @@
 import Foundation
 
 
-enum powers: Int {
-    case bombardeioDeGuerra = 1
-    case ataqueAoPosto = 2
-    case campoFechado = 3
-    case acordoDeMercenarios = 4
+enum Powers: String {
+    case bombardeioDeGuerra = "Cannon"
+    case ataqueAoPosto = "AtaqueAoPosto"
+    case campoFechado = "CampoFechado"
+    case acordoDeMercenarios = "AcordoDeMercenarios"
 }
 
-let nameOfPowers: [Int: String] = [
-    1: "Bombardeio de Guerra",
-    2: "Ataque ao posto",
-    3: "Campo Fechado",
-    4: "Acordo de mercenários"
+let nameOfPowers: [String: String] = [
+    "Cannon": "Bombardeio de Guerra",
+    "AtaqueAoPosto": "Ataque ao Posto",
+    "CampoFechado": "Campo Fechado",
+    "AcordoDeMercenarios": "Acordo de Mercenários"
 ]

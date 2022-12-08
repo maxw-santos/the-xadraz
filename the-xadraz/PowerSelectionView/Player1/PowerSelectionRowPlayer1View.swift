@@ -9,14 +9,14 @@ import SwiftUI
 struct PowerSelectionRowPlayer1View: View {
     
     
-    let model: PowerSelectionRow
+    let power: Powers
 
     var body: some View {
 
         VStack{
                 HStack{
-                    Text(nameOfPowers[model.title.rawValue]!)
-                    Image(model.iconName)
+                    Text(nameOfPowers[power.rawValue]!)
+                    Image(power.rawValue)
                 }
             
             }

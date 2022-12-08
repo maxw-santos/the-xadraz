@@ -8,6 +8,6 @@
 import Foundation
 
 struct globalVariables {
-    static var powerPlayer1: powers = .bombardeioDeGuerra
-    static var powerPlayer2: powers = .bombardeioDeGuerra
+    static var powerPlayer1: Powers = .bombardeioDeGuerra
+    static var powerPlayer2: Powers = .bombardeioDeGuerra
 }

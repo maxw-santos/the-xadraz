@@ -10,8 +10,7 @@ import SwiftUI
 
 struct PowerSelectionPlayer1View: View {
 
-    @State var selectedPower: powers = .bombardeioDeGuerra
-    @EnvironmentObject private var powerOfPlayer1: PowerOfPlayer1
+    @EnvironmentObject private var powerOfPlayer1: PowerOfPlayers
     
     
     var body: some View {
@@ -20,10 +19,10 @@ struct PowerSelectionPlayer1View: View {
 
         VStack{
 
-            Picker("Selecione o poder do player", selection: $powerOfPlayer1.Power){
+            Picker("Selecione o poder do player", selection: $powerOfPlayer1.Power1){
 
-                ForEach(rowPowers, id: \.title) { model in
-PowerSelectionRowPlayer1View(model: model)
+                ForEach(rowPowers, id: \.self) { power in
+PowerSelectionRowPlayer1View(power: power)
                             
             }
                     

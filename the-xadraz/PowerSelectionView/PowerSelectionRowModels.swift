@@ -10,7 +10,6 @@ import SwiftUI
 
 
 struct PowerSelectionRow {
-    let iconName: String
     let title:    powers
 }
 

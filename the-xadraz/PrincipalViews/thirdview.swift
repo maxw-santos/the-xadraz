@@ -9,8 +9,7 @@ import SwiftUI
 
 struct thirdview: View {
     
-    @EnvironmentObject private var powerOfPlayer1: PowerOfPlayer1
-    @EnvironmentObject private var powerOfPlayer2: PowerOfPlayer2
+    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
     
     var body: some View {
         
@@ -38,7 +37,7 @@ struct thirdview: View {
                                    .position(x: 370, y: 140)
                                    .ignoresSafeArea()
                                
-                               Image(nameOfPowers[powerOfPlayer2.Power.rawValue]!)
+                               Image(nameOfPowers[powerOfPlayers.Power2.rawValue]!)
                                    
                                }
                            }
@@ -58,7 +57,7 @@ struct thirdview: View {
                                        .position(x: 120, y: 30)
                                        .ignoresSafeArea()
                                    
-                                   Image(nameOfPowers[powerOfPlayer1.Power.rawValue]!)
+                                   Image(nameOfPowers[powerOfPlayers.Power2.rawValue]!)
                                    
                                }
                            }

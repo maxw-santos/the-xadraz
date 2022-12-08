@@ -36,6 +36,7 @@ struct SecondView: View {
                     HStack {
                         SelectionTimeButtons()
                             .position(x: 70 , y: 50 )
+                        
                         NavigationLink(destination: thirdview()) {
                             Image("PlayIcon")
                             

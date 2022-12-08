@@ -8,42 +8,10 @@
 import Foundation
 
 
-var rowPowers: [PowerSelectionRow] = [
-
-    PowerSelectionRow(
-
-        iconName: "Cannon" ,
-
-        title: .bombardeioDeGuerra
-        
-
-    ),
-
-    PowerSelectionRow(
-
-        iconName: "CampoFechado",
-
-        title: .campoFechado
-        
-
-    ),
-
-    PowerSelectionRow(
-
-        iconName: "AtaqueAoPosto",
-
-        title: .ataqueAoPosto
-    
-
-    ),
-
-    PowerSelectionRow(
-
-        iconName: "AcordoDeMercenarios",
-
-        title: .acordoDeMercenarios
-        
-
-    )
+var rowPowers: [Powers] = [
+                        .bombardeioDeGuerra,
+                        .campoFechado,
+                        .ataqueAoPosto,
+                        .acordoDeMercenarios
 
 ]
