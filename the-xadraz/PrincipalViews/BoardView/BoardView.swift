@@ -45,6 +45,7 @@ struct BoardView: View {
                             else {
                                 Image("dbhw")
                                     .aspectRatio(1, contentMode: .fit)
+                                
                             }
                             
                             
@@ -140,6 +141,7 @@ struct BoardView: View {
         static var previews: some View {
             
             BoardView()
+                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
             
         }
         

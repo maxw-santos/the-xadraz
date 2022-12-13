@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct BoardView2: View {
-
+    
+    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
 
 

@@ -61,7 +61,7 @@ struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
         
         SecondView()
-        
+            .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
     }
     
 }
