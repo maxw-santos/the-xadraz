@@ -26,27 +26,7 @@ struct thirdview: View {
                         UIScreen.main.bounds.height)
             
             VStack(spacing: 0.0) {
-                
-                Button(
-                    action: {print()},
-                       label: {
-                           ZStack{
-                               Circle()
-                                   .fill(.white.opacity(0.9))
-                                   .frame(width: 100, height:100)
-                                   .position(x: 370, y: 140)
-                                   .ignoresSafeArea()
-                               
-                               Image(nameOfPowers[powerOfPlayers.Power2.rawValue]!)
-
-                               }
-                           }
-                )
-                       }
-                
-                TableView()
-                    .padding(50)
-                
+                HStack{
                     Button(
                         action: {print()},
                            label: {
@@ -54,14 +34,38 @@ struct thirdview: View {
                                    Circle()
                                        .fill(.white.opacity(0.9))
                                        .frame(width: 100, height:100)
-                                       .position(x: 120, y: 30)
-                                       .ignoresSafeArea()
                                    
-                                   Image(nameOfPowers[powerOfPlayers.Power2.rawValue]!)
-                                   
+                                   Image(powerOfPlayers.Power1.rawValue)
+
+                                   }
                                }
+                    )
+                        .position(x: 130, y: 115)
+                    
+                }
+                Spacer()
+                       }
+                
+                TableView()
+                    .padding(50)
+            
+                Spacer()
+            
+            HStack{
+                Button(
+                    action: {print()},
+                       label: {
+                           ZStack{
+                               Circle()
+                                   .fill(.white.opacity(0.9))
+                                   .frame(width: 100, height: 100)
+                               
+                               Image(powerOfPlayers.Power2.rawValue)
+                               
                            }
-                )
+                       }
+            )
+            }
 
             }
     
@@ -76,6 +80,7 @@ struct thirdview: View {
         static var previews: some View {
             
             thirdview()
+                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
             
         }
     }

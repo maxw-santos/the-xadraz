@@ -16,7 +16,7 @@ struct SecondView: View {
         NavigationView {
             
             ZStack{
-                Image("tela2")//Background
+                Image("tela2") //Background
                     .resizable()
                     .ignoresSafeArea()
                     .edgesIgnoringSafeArea(.all)
@@ -25,6 +25,7 @@ struct SecondView: View {
                     Image("tex1")
                         .position(x : 150 , y : 90 )
                     SelectionPowerPlayer1Button()
+                    
                         .position(x : 200, y: 50)
                     Image("tex2")
                         .position(x : 150 , y : 35 )
