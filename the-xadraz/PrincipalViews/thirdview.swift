@@ -41,7 +41,8 @@ struct thirdview: View {
                                }
                     )
                         .position(x: 130, y: 115)
-                    
+                    Image("pb")
+                        .position(x: 130, y: 180)
                 }
                 Spacer()
                        }
@@ -62,9 +63,13 @@ struct thirdview: View {
                                
                                Image(powerOfPlayers.Power2.rawValue)
                                
+                               
                            }
                        }
             )
+                .position(x: 360, y: 710)
+                Image("pp")
+                    .position(x: -150, y: 670)
             }
 
             }
