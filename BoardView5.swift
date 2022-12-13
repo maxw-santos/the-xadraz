@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct BoardView5: View {
-  
+    
+    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
 
         
@@ -30,9 +31,13 @@ struct BoardView5: View {
                     
                     
                     Button {
+                        if (!buttonsStates[number - 1]){
+                            
+                            buttonsStates[number - 1].toggle()
+                            
+                            powerOfPlayers.count2 += 1
+                        }
                         
-                        
-                        buttonsStates[number - 1].toggle()
                         
                         
                     } label: {
@@ -87,6 +92,7 @@ struct BoardView5: View {
     struct BoardView5_Previews: PreviewProvider {
         static var previews: some View {
             BoardView5()
+                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
         }
     }
 }

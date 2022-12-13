@@ -11,6 +11,9 @@ struct BoardView6: View {
     
     let numbers = Array(1...8)
     
+    let counterValues: [Int] = [5, 3, 3, 9, 0, 3, 3, 5]
+    
+    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
 
     
@@ -28,8 +31,11 @@ struct BoardView6: View {
                 
                 Button {
                     
-                    
-                    buttonsStates[number - 1].toggle()
+                    if (!buttonsStates[number - 1]){
+                        buttonsStates[number - 1].toggle()
+                        
+                        powerOfPlayers.count2 += counterValues[number - 1]
+                    }
                    
                     
                     

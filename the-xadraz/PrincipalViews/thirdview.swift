@@ -41,8 +41,12 @@ struct thirdview: View {
                                }
                     )
                         .position(x: 130, y: 115)
-                    Image("pb")
-                        .position(x: 130, y: 180)
+                    HStack{
+                        Text(String(powerOfPlayers.count1))
+                            .font((.system(size: 50, weight: .heavy, design: .rounded)))
+                        Image("pb")
+                    }
+                    .position(x: 130, y: 180)
                 }
                 Spacer()
                        }
@@ -68,8 +72,13 @@ struct thirdview: View {
                        }
             )
                 .position(x: 360, y: 710)
-                Image("pp")
+                HStack{
+                    Image("pp")
+                    Text(String(powerOfPlayers.count2))
+                        .font((.system(size: 50, weight: .heavy, design: .rounded)))
+                }
                     .position(x: -150, y: 670)
+                
             }
 
             }

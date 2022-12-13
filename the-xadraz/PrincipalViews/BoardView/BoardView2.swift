@@ -31,9 +31,11 @@ struct BoardView2: View {
 
                 Button {
 
-                    
-
-                    buttonsStates[number - 1].toggle()
+                    if (!buttonsStates[number - 1]){
+                        buttonsStates[number - 1].toggle()
+                        
+                        powerOfPlayers.count1 += 1
+                    }
 
                     
 
@@ -105,6 +107,7 @@ struct boardview2_Previews: PreviewProvider {
     static var previews: some View {
 
         BoardView2()
+            .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
 
     }
 

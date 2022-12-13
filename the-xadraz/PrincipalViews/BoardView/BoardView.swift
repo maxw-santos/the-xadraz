@@ -9,7 +9,11 @@ import SwiftUI
 
 struct BoardView: View {
     
+    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
+    
+    let counterValues: [Int] = [5, 3, 3, 9, 0, 3, 3, 5]
     
     let numbers = Array(1...8)
     
@@ -29,7 +33,11 @@ struct BoardView: View {
                 
                 Button {
                     
-                    buttonsStates[number - 1].toggle()
+                    if (!buttonsStates[number - 1]){
+                        buttonsStates[number - 1].toggle()
+                        
+                        powerOfPlayers.count1 += counterValues[number - 1]
+                    }
                     
                     
                 } label: {
@@ -43,8 +51,10 @@ struct BoardView: View {
                                     .aspectRatio(1, contentMode: .fit)
                             }
                             else {
-                                Image("dbhw")
-                                    .aspectRatio(1, contentMode: .fit)
+                                    Image("dbhw")
+                                        .aspectRatio(1, contentMode: .fit)
+                                    
+        
                                 
                             }
                             
@@ -57,6 +67,7 @@ struct BoardView: View {
                             } else{
                                 Image("dbhb")
                                     .aspectRatio(1, contentMode: .fit)
+                                
                             }
                         } 
                         
@@ -67,6 +78,7 @@ struct BoardView: View {
                             } else{
                                 Image("dbhw")
                                     .aspectRatio(1, contentMode: .fit)
+                                
                             }
                         }
                         if number == 4{
@@ -77,6 +89,7 @@ struct BoardView: View {
                             else{
                                 Image("dbhb")
                                     .aspectRatio(1, contentMode: .fit)
+                                
                                 
                             }
                         }
@@ -96,6 +109,7 @@ struct BoardView: View {
                             else{
                                 Image("dbhb")
                                     .aspectRatio(1, contentMode: .fit)
+                                
                             }
                             
                         }
@@ -107,7 +121,7 @@ struct BoardView: View {
                             else{
                                 Image("dbhw")
                                     .aspectRatio(1, contentMode: .fit)
-                                
+                                                                
                             }
                         }
                         if number == 8{
@@ -117,7 +131,9 @@ struct BoardView: View {
                             }
                             else{
                                 Image("dbhb")
-                                .aspectRatio(1, contentMode: .fit)                        }
+                                .aspectRatio(1, contentMode: .fit)
+                                
+                            }
                         }
                         
                         
