@@ -15,22 +15,22 @@
 		9135E372294285CD00380473 /* BoardView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E371294285CD00380473 /* BoardView4.swift */; };
 		9135E3742942860300380473 /* BoardView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E3732942860300380473 /* BoardView5.swift */; };
 		9135E3762942862E00380473 /* BoardView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135E3752942862E00380473 /* BoardView6.swift */; };
+		9137A52D2948E7B80082EFE5 /* PowerSelectionPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */; };
+		9137A52E2948E7BB0082EFE5 /* PowerSelectionPowerPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */; };
+		9137A52F2948E7BE0082EFE5 /* PowerSelectionPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */; };
+		9137A5302948E7C00082EFE5 /* PowerSelectionRowPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */; };
+		9137A5312948E7C30082EFE5 /* PowerSelectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */; };
+		9137A5322948E7C60082EFE5 /* PowerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040F294258D500A480F6 /* PowerEnum.swift */; };
+		9137A5332948E9290082EFE5 /* PowerOfPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040B2942586300A480F6 /* PowerOfPlayers.swift */; };
 		913EB1C4292D4A3800965B69 /* splashview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1C3292D4A3800965B69 /* splashview.swift */; };
 		91970040292D5BC00025C9FA /* thirdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197003F292D5BC00025C9FA /* thirdview.swift */; };
-		91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636D292F961000032065 /* PowerSelectionPlayer1View.swift */; };
-		91A06370292F964E00032065 /* PowerSelectionRowPlayer1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0636F292F964E00032065 /* PowerSelectionRowPlayer1View.swift */; };
-		C62E040C2942586300A480F6 /* PowerOfPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040B2942586300A480F6 /* PowerOfPlayers.swift */; };
-		C62E0410294258D500A480F6 /* PowerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E040F294258D500A480F6 /* PowerEnum.swift */; };
 		C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */; };
 		C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FCFEE292D407C00D0004A /* SecondView.swift */; };
 		C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F154E2939248900DD5DA7 /* GlobalVariables.swift */; };
-		C68F15532939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */; };
-		C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15542939278E00DD5DA7 /* PowerSelectionPlayer2View.swift */; };
 		C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15562939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift */; };
 		C68F155A29393B0500DD5DA7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F155929393B0500DD5DA7 /* BoardView.swift */; };
 		C68F155C29393B5F00DD5DA7 /* BoardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F155B29393B5F00DD5DA7 /* BoardView2.swift */; };
 		C68F156029393B8B00DD5DA7 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F155F29393B8B00DD5DA7 /* TableView.swift */; };
-		C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F95E029313AE8006F5D33 /* PowerSelectionEnum.swift */; };
 		C6E492352937E5AB00FCB04D /* TimeSelectionRowModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E492342937E5AB00FCB04D /* TimeSelectionRowModels.swift */; };
 		C6E492372937E64E00FCB04D /* TimeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E492362937E64E00FCB04D /* TimeSelectionView.swift */; };
 		C6E492392937E81D00FCB04D /* TimeSelectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E492382937E81D00FCB04D /* TimeSelectionRowView.swift */; };
@@ -282,27 +282,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */,
+				9137A52D2948E7B80082EFE5 /* PowerSelectionPlayer2View.swift in Sources */,
 				9135E370294284CD00380473 /* BoardView3.swift in Sources */,
 				9135E372294285CD00380473 /* BoardView4.swift in Sources */,
-				C68F15552939278E00DD5DA7 /* PowerSelectionPlayer2View.swift in Sources */,
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
 				91970040292D5BC00025C9FA /* thirdview.swift in Sources */,
+				9137A52F2948E7BE0082EFE5 /* PowerSelectionPlayer1View.swift in Sources */,
+				9137A5312948E7C30082EFE5 /* PowerSelectionEnum.swift in Sources */,
 				9135E3762942862E00380473 /* BoardView6.swift in Sources */,
+				9137A5332948E9290082EFE5 /* PowerOfPlayers.swift in Sources */,
 				C6E4923B2937ECB400FCB04D /* SelectionTimeButtons.swift in Sources */,
-				C69F95E129313AE8006F5D33 /* PowerSelectionEnum.swift in Sources */,
 				C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */,
-				C62E0410294258D500A480F6 /* PowerEnum.swift in Sources */,
 				C6E492372937E64E00FCB04D /* TimeSelectionView.swift in Sources */,
-				91A0636E292F961000032065 /* PowerSelectionPlayer1View.swift in Sources */,
 				C68F156029393B8B00DD5DA7 /* TableView.swift in Sources */,
-				91A06370292F964E00032065 /* PowerSelectionRowPlayer1View.swift in Sources */,
+				9137A5302948E7C00082EFE5 /* PowerSelectionRowPlayer1View.swift in Sources */,
 				C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */,
-				C68F15532939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift in Sources */,
 				C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */,
 				C6E492352937E5AB00FCB04D /* TimeSelectionRowModels.swift in Sources */,
+				9137A52E2948E7BB0082EFE5 /* PowerSelectionPowerPlayer2View.swift in Sources */,
 				C68F155C29393B5F00DD5DA7 /* BoardView2.swift in Sources */,
+				9137A5322948E7C60082EFE5 /* PowerEnum.swift in Sources */,
 				C6E492392937E81D00FCB04D /* TimeSelectionRowView.swift in Sources */,
-				C62E040C2942586300A480F6 /* PowerOfPlayers.swift in Sources */,
 				C68F155A29393B0500DD5DA7 /* BoardView.swift in Sources */,
 				911F00D429157CB200010350 /* FirstView.swift in Sources */,
 				9135E3742942860300380473 /* BoardView5.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct thirdview: View {
     
-    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject var powerOfPlayers: PowerOfPlayers
     
     var body: some View {
         
@@ -38,7 +38,7 @@ struct thirdview: View {
                                    .ignoresSafeArea()
                                
                                Image(nameOfPowers[powerOfPlayers.Power2.rawValue]!)
-                                   
+
                                }
                            }
                 )

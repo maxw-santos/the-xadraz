@@ -8,81 +8,140 @@
 import SwiftUI
 
 struct BoardView: View {
-
     
-
+    @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
+    
     let numbers = Array(1...8)
-
     
-
+    
+    
     var body: some View {
-
         
-
+        
+        
         HStack(spacing: 0) {
-
             
-
+            
+            
             ForEach(numbers, id: \.self) { number in
-
                 
-
+                
+                
                 Button {
-
                     
-
-                    print(number)
-
+                    buttonsStates[number - 1].toggle()
                     
-
+                    
                 } label: {
-
                     
-
+                    
                     ZStack {
-
-                        if number % 2 == 0 {
-
-                            Image("black")
-
-                                .aspectRatio(1, contentMode: .fit)
-
-                        } else {
-
-                            Image("white")
-
-                                .aspectRatio(1, contentMode: .fit)
-
+                        
+                        if number == 1 {
+                            if !buttonsStates[number - 1]{
+                                Image("tbhw")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else {
+                                Image("dbhw")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            
+                            
+                        };
+                        if number == 2 {
+                            if !buttonsStates[number - 1]{
+                                Image("hbcb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            } else{
+                                Image("dbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                        } 
+                        
+                        if number == 3{
+                            if !buttonsStates[number - 1]{
+                                Image("bbhw")
+                                    .aspectRatio(1, contentMode: .fit)
+                            } else{
+                                Image("dbhw")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
                         }
+                        if number == 4{
+                            if !buttonsStates[number - 1]{
+                                Image("qb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else{
+                                Image("dbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                                
+                            }
+                        }
+                        if number == 5{
+                            
+                                Image("kb")
+                                    .aspectRatio(1, contentMode: .fit)
 
+                            
+                        }
+                        if number == 6{
+                            if !buttonsStates[number - 1]{
+                                
+                                Image("bbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else{
+                                Image("dbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            
+                        }
+                        if number == 7{
+                            if !buttonsStates[number - 1]{
+                                Image("hbcw")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else{
+                                Image("dbhw")
+                                    .aspectRatio(1, contentMode: .fit)
+                                
+                            }
+                        }
+                        if number == 8{
+                            if !buttonsStates[number - 1]{
+                                Image("tbhb")
+                                    .aspectRatio(1, contentMode: .fit)
+                            }
+                            else{
+                                Image("dbhb")
+                                .aspectRatio(1, contentMode: .fit)                        }
+                        }
+                        
+                        
+                        
                     }
-
                     
-
+                    
+                    
                 }
-
                 
-
+                
+                
             }
-
             
-
+            
+            
         }
-
+    }
+    struct Boardview_Previews: PreviewProvider {
         
-
+        static var previews: some View {
+            
+            BoardView()
+            
+        }
+        
     }
-
-    
-
-}
-
-struct boardview_Previews: PreviewProvider {
-
-    static var previews: some View {
-
-        BoardView()
-
-    }
-
 }
