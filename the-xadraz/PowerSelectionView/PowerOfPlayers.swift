@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PowerOfPlayers: ObservableObject{
+class PowerOfPlayers: ObservableObject, Identifiable{
     
     @Published var Power1: Powers;
     @Published var Power2: Powers;

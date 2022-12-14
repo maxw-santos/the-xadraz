@@ -10,7 +10,9 @@ import SwiftUI
 struct BoardView: View {
     
     @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject var alertMessage: AlertMessage
     
+    @State var isShowingAlert = false;
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
     
     let counterValues: [Int] = [5, 3, 3, 9, 0, 3, 3, 5]
@@ -37,6 +39,29 @@ struct BoardView: View {
                         buttonsStates[number - 1].toggle()
                         
                         powerOfPlayers.count1 += counterValues[number - 1]
+                        
+                        alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 1)
+                        
+                        
+                        if (buttonsStates[number - 1] && !buttonsStates[7 - (number - 1)] && number != 5 && number != 4){
+                            
+                            isShowingAlert =  true
+                            
+                        }
+                        else if(!buttonsStates[number - 1] && buttonsStates[7 - (number - 1)] && number != 5 && number != 4) {
+                            
+                            isShowingAlert =  true
+                            
+                        }
+                        else if (alertMessage.counter == 1){
+                            
+                            isShowingAlert = true
+                            
+                        }
+                        
+                        
+                        
+                        
                     }
                     
                     
@@ -51,7 +76,7 @@ struct BoardView: View {
                                     .aspectRatio(1, contentMode: .fit)
                             }
                             else {
-                                    Image("dbhw")
+                                Image("dbhw")
                                         .aspectRatio(1, contentMode: .fit)
                                     
         
@@ -143,6 +168,17 @@ struct BoardView: View {
                     
                     
                 }
+                .alert(isPresented: $isShowingAlert){
+                    Alert(title: Text(alertMessage.titulo), message: Text(alertMessage.mensagem),
+                          dismissButton:
+                            .default(Text("OK"), action: {
+                                alertMessage.titulo = "";
+                                alertMessage.mensagem = ""
+
+                                
+                            })
+                    )
+                    }
                 
                 
                 
@@ -158,6 +194,7 @@ struct BoardView: View {
             
             BoardView()
                 .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(AlertMessage(titulo: "", mensagem: ""))
             
         }
         

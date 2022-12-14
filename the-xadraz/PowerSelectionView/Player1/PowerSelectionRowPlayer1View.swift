@@ -17,6 +17,7 @@ struct PowerSelectionRowPlayer1View: View {
                 HStack{
                     Text(nameOfPowers[power.rawValue]!)
                     Image(power.rawValue)
+                        
                 }
             
             }

@@ -10,8 +10,10 @@ import SwiftUI
 struct BoardView5: View {
     
     @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var alertMessage: AlertMessage
+    
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
-
+    @State var isShowingAlert = false
         
         
         let numbers = Array(1...8)
@@ -36,7 +38,14 @@ struct BoardView5: View {
                             buttonsStates[number - 1].toggle()
                             
                             powerOfPlayers.count2 += 1
-                        }
+                            
+                            alertMessage.setAlert2(buttonsStates: buttonsStates, number: number, player: 0)
+                            
+                            isShowingAlert = alertMessage.numberOfPawns == 4 ? true : false;
+                            
+                    }
+                        
+                        
                         
                         
                         
@@ -75,7 +84,17 @@ struct BoardView5: View {
                         }
                         
                         
+                    }.alert(isPresented: $isShowingAlert){
+                        Alert(title: Text(alertMessage.titulo), message: Text(alertMessage.mensagem),
+                              dismissButton:
+                                .default(Text("OK"), action: {
+                                    alertMessage.titulo = "";
+                                    alertMessage.mensagem = ""
+
+                                    
+                                }))
                     }
+                        
                     
                     
                     
@@ -93,6 +112,7 @@ struct BoardView5: View {
         static var previews: some View {
             BoardView5()
                 .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(AlertMessage(titulo: "", mensagem: ""))
         }
     }
 }

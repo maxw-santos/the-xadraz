@@ -9,7 +9,9 @@ import SwiftUI
 
 struct thirdview: View {
     
+    @State var isShowingAlert = false;
     @EnvironmentObject var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var alertMEssage: AlertMessage
     
     var body: some View {
         
@@ -27,9 +29,9 @@ struct thirdview: View {
             
             VStack(spacing: 0.0) {
                 HStack{
-                    Button(
-                        action: {print()},
-                           label: {
+//                    Button(
+////                        action: {print()},
+//                           label: {
                                ZStack{
                                    Circle()
                                        .fill(.white.opacity(0.9))
@@ -38,8 +40,8 @@ struct thirdview: View {
                                    Image(powerOfPlayers.Power1.rawValue)
 
                                    }
-                               }
-                    )
+//                               }
+//                    )
                         .position(x: 130, y: 115)
                     HStack{
                         Text(String(powerOfPlayers.count1))
@@ -57,9 +59,9 @@ struct thirdview: View {
                 Spacer()
             
             HStack{
-                Button(
-                    action: {print()},
-                       label: {
+//                Button(
+//                    action: {print()},
+//                       label: {
                            ZStack{
                                Circle()
                                    .fill(.white.opacity(0.9))
@@ -69,8 +71,7 @@ struct thirdview: View {
                                
                                
                            }
-                       }
-            )
+//            )
                 .position(x: 360, y: 710)
                 HStack{
                     Image("pp")
@@ -95,6 +96,7 @@ struct thirdview: View {
             
             thirdview()
                 .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(AlertMessage(titulo: "", mensagem: ""))
             
         }
     }

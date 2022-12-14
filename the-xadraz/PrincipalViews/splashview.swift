@@ -23,6 +23,12 @@ struct splashview: View {
                     
                     
                 }
+                .ignoresSafeArea()
+
+                    .edgesIgnoringSafeArea(.all)
+
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
                 
             }
         }

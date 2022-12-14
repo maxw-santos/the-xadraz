@@ -10,6 +10,9 @@ import SwiftUI
 struct BoardView2: View {
     
     @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var alertMessage: AlertMessage
+    
+    @State var isShowingAlert = false
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
 
 
@@ -35,6 +38,12 @@ struct BoardView2: View {
                         buttonsStates[number - 1].toggle()
                         
                         powerOfPlayers.count1 += 1
+                        
+                        alertMessage.setAlert2(buttonsStates: buttonsStates, number: number, player: 1)
+                        
+                        isShowingAlert = alertMessage.numberOfPawns == 4 ? true : false
+                        
+                        
                     }
 
                     
@@ -47,10 +56,10 @@ struct BoardView2: View {
                         
                         if number % 2 == 0 {
                             if !buttonsStates[number - 1]{
-                                
                                 Image("pbhw")
                                 
                                     .aspectRatio(1, contentMode: .fit)
+                                
                             }
                             else {
                                 Image("dbhw")
@@ -71,17 +80,20 @@ struct BoardView2: View {
                             }
                         }
                     }
+                    
 
-//                            Image("pbhb")
-//
-//                                .aspectRatio(1, contentMode: .fit)
-//
-//                        }
-//
-//                    }
 
                     
 
+                }.alert(isPresented: $isShowingAlert){
+                    Alert(title: Text(alertMessage.titulo), message: Text(alertMessage.mensagem),
+                          dismissButton:
+                            .default(Text("OK"), action: {
+                                alertMessage.titulo = "";
+                                alertMessage.mensagem = ""
+
+                                
+                            }))
                 }
 
                 
@@ -108,6 +120,7 @@ struct boardview2_Previews: PreviewProvider {
 
         BoardView2()
             .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+            .environmentObject(AlertMessage(titulo: "", mensagem: ""))
 
     }
 

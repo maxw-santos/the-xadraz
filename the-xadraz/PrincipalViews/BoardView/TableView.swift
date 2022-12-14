@@ -9,7 +9,6 @@
 import SwiftUI
 
 
-
 struct TableView: View {
 
     var body: some View {
@@ -21,8 +20,8 @@ struct TableView: View {
             VStack(spacing: 0.0){
                    
                     BoardView()
-
                     BoardView2()
+                
                 ForEach( 1..<3 ){ _ in
                     BoardView3()
                     BoardView4()

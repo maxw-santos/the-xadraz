@@ -25,6 +25,7 @@
 		913EB1C4292D4A3800965B69 /* splashview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1C3292D4A3800965B69 /* splashview.swift */; };
 		91970040292D5BC00025C9FA /* thirdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197003F292D5BC00025C9FA /* thirdview.swift */; };
 		C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */; };
+		C67D2266294A0C7B00F3D1DD /* AlertScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D2265294A0C7B00F3D1DD /* AlertScript.swift */; };
 		C67FCFEF292D407C00D0004A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FCFEE292D407C00D0004A /* SecondView.swift */; };
 		C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F154E2939248900DD5DA7 /* GlobalVariables.swift */; };
 		C68F15572939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F15562939298D00DD5DA7 /* SelectionPowerPlayer2Button.swift */; };
@@ -35,6 +36,7 @@
 		C6E492372937E64E00FCB04D /* TimeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E492362937E64E00FCB04D /* TimeSelectionView.swift */; };
 		C6E492392937E81D00FCB04D /* TimeSelectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E492382937E81D00FCB04D /* TimeSelectionRowView.swift */; };
 		C6E4923B2937ECB400FCB04D /* SelectionTimeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4923A2937ECB400FCB04D /* SelectionTimeButtons.swift */; };
+		C6E5A0DB294A5455001A1FDB /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5A0DA294A5455001A1FDB /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,7 @@
 		C62E040B2942586300A480F6 /* PowerOfPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfPlayers.swift; sourceTree = "<group>"; };
 		C62E040F294258D500A480F6 /* PowerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerEnum.swift; sourceTree = "<group>"; };
 		C6561D0F292FA0E000646C81 /* SelectionPowerPlayer1Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPowerPlayer1Button.swift; sourceTree = "<group>"; };
+		C67D2265294A0C7B00F3D1DD /* AlertScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertScript.swift; sourceTree = "<group>"; };
 		C67FCFEE292D407C00D0004A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		C68F154E2939248900DD5DA7 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		C68F15522939272400DD5DA7 /* PowerSelectionPowerPlayer2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSelectionPowerPlayer2View.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		C6E492362937E64E00FCB04D /* TimeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionView.swift; sourceTree = "<group>"; };
 		C6E492382937E81D00FCB04D /* TimeSelectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionRowView.swift; sourceTree = "<group>"; };
 		C6E4923A2937ECB400FCB04D /* SelectionTimeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTimeButtons.swift; sourceTree = "<group>"; };
+		C6E5A0DA294A5455001A1FDB /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				913EB1C3292D4A3800965B69 /* splashview.swift */,
 				911F00D329157CB200010350 /* FirstView.swift */,
 				C67FCFEE292D407C00D0004A /* SecondView.swift */,
+				C6E5A0DA294A5455001A1FDB /* HelpView.swift */,
 				9197003F292D5BC00025C9FA /* thirdview.swift */,
 				C68F155829393ADE00DD5DA7 /* BoardView */,
 			);
@@ -170,6 +175,7 @@
 				9135E3732942860300380473 /* BoardView5.swift */,
 				9135E3752942862E00380473 /* BoardView6.swift */,
 				C68F155F29393B8B00DD5DA7 /* TableView.swift */,
+				C67D2265294A0C7B00F3D1DD /* AlertScript.swift */,
 			);
 			path = BoardView;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				913EB1C4292D4A3800965B69 /* splashview.swift in Sources */,
 				91970040292D5BC00025C9FA /* thirdview.swift in Sources */,
 				9137A52F2948E7BE0082EFE5 /* PowerSelectionPlayer1View.swift in Sources */,
+				C67D2266294A0C7B00F3D1DD /* AlertScript.swift in Sources */,
 				9137A5312948E7C30082EFE5 /* PowerSelectionEnum.swift in Sources */,
 				9135E3762942862E00380473 /* BoardView6.swift in Sources */,
 				9137A5332948E9290082EFE5 /* PowerOfPlayers.swift in Sources */,
@@ -297,6 +304,7 @@
 				C68F156029393B8B00DD5DA7 /* TableView.swift in Sources */,
 				9137A5302948E7C00082EFE5 /* PowerSelectionRowPlayer1View.swift in Sources */,
 				C6561D10292FA0E000646C81 /* SelectionPowerPlayer1Button.swift in Sources */,
+				C6E5A0DB294A5455001A1FDB /* HelpView.swift in Sources */,
 				C68F154F2939248900DD5DA7 /* GlobalVariables.swift in Sources */,
 				C6E492352937E5AB00FCB04D /* TimeSelectionRowModels.swift in Sources */,
 				9137A52E2948E7BB0082EFE5 /* PowerSelectionPowerPlayer2View.swift in Sources */,
