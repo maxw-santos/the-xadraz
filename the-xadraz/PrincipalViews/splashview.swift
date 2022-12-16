@@ -49,7 +49,7 @@ struct splashview_Previews: PreviewProvider {
     static var previews: some View {
 
         FirstView()
-            .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+            .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
     }
 
 }

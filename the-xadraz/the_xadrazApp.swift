@@ -12,7 +12,7 @@ struct the_xadrazApp: App {
     var body: some Scene {
         WindowGroup {
             FirstView()
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
                 .environmentObject(AlertMessage(titulo: "", mensagem: ""))
         }
     }

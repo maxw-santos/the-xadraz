@@ -18,6 +18,7 @@ struct PowerSelectionRowPlayer2View: View {
                 HStack{
                     Text(nameOfPowers[power.rawValue]!)
                     Image(power.rawValue)
+                        .scaledToFit()
                 }
             
         }

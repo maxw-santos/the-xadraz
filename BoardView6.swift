@@ -22,7 +22,7 @@ struct BoardView6: View {
     
     let counterValues: [Int] = [5, 3, 3, 9, 0, 3, 3, 5]
     
-    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var settingsOfPlayers: SettingsOfPlayers
     @EnvironmentObject private var alertMessage: AlertMessage
     
     var body: some View {
@@ -37,24 +37,37 @@ struct BoardView6: View {
                 Button(
                     action: {
                     
-                    if (!buttonsStates[number - 1]) {
+                    if (!buttonsStates[number - 1] && number != 5) {
                         buttonsStates[number - 1].toggle()
                         
-                        powerOfPlayers.count2 += counterValues[number - 1]
+                        alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 0, pawn: false)
+                        
+                        settingsOfPlayers.count2 += counterValues[number - 1]
                         
                         if (buttonsStates[number - 1] && !buttonsStates[7 - (number - 1)] && number != 5 && number != 4){
                             
-                            isShowingAlert =  true
+                            isShowingAlert = true
                             
                         }
                         else if(!buttonsStates[number - 1] && buttonsStates[7 - (number - 1)] && number != 5 && number != 4) {
                             
-                            isShowingAlert =  true
+                            isShowingAlert = true
                             
                         }
+                        else if (alertMessage.numberOfPowerful
+                                 == 7){
+                            
+                            isShowingAlert = true
+                            
+                        }
+                        else if (alertMessage.numberOfPowerful == 6 && !buttonsStates[3]){
+                            
+                            isShowingAlert = true
+                            
+                        }
+                         
                         
                         
-                        alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 0)
                     }
                     
                 },
@@ -155,7 +168,7 @@ struct BoardView6: View {
         static var previews: some View {
             BoardView6()
                 .environmentObject(AlertMessage(titulo: "", mensagem: ""))
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
         }
     }
 }

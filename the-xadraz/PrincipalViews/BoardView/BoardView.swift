@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BoardView: View {
     
-    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var settingOfPlayers: SettingsOfPlayers
     @EnvironmentObject var alertMessage: AlertMessage
     
     @State var isShowingAlert = false;
@@ -35,25 +35,29 @@ struct BoardView: View {
                 
                 Button {
                     
-                    if (!buttonsStates[number - 1]){
+                    if (!buttonsStates[number - 1] && number != 5) {
                         buttonsStates[number - 1].toggle()
                         
-                        powerOfPlayers.count1 += counterValues[number - 1]
+                        alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 0, pawn: false)
                         
-                        alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 1)
-                        
+                        settingOfPlayers.count1 += counterValues[number - 1]
                         
                         if (buttonsStates[number - 1] && !buttonsStates[7 - (number - 1)] && number != 5 && number != 4){
                             
-                            isShowingAlert =  true
+                            isShowingAlert = true
                             
                         }
                         else if(!buttonsStates[number - 1] && buttonsStates[7 - (number - 1)] && number != 5 && number != 4) {
                             
-                            isShowingAlert =  true
+                            isShowingAlert = true
                             
                         }
-                        else if (alertMessage.counter == 1){
+                        else if (alertMessage.numberOfPowerful == 7){
+                            
+                            isShowingAlert = true
+                            
+                        }
+                        else if (alertMessage.numberOfPowerful == 6 && !buttonsStates[3]){
                             
                             isShowingAlert = true
                             
@@ -193,7 +197,7 @@ struct BoardView: View {
         static var previews: some View {
             
             BoardView()
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
                 .environmentObject(AlertMessage(titulo: "", mensagem: ""))
             
         }

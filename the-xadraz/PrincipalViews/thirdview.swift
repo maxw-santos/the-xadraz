@@ -10,8 +10,9 @@ import SwiftUI
 struct thirdview: View {
     
     @State var isShowingAlert = false;
-    @EnvironmentObject var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject var settingOfPlayers: SettingsOfPlayers
     @EnvironmentObject private var alertMEssage: AlertMessage
+    
     
     var body: some View {
         
@@ -37,22 +38,43 @@ struct thirdview: View {
                                        .fill(.white.opacity(0.9))
                                        .frame(width: 100, height:100)
                                    
-                                   Image(powerOfPlayers.Power1.rawValue)
+                                   Image(settingOfPlayers.Power1.rawValue)
 
                                    }
+                                    .position(x: 110, y: 148)
 //                               }
 //                    )
-                        .position(x: 130, y: 115)
-                    HStack{
-                        Text(String(powerOfPlayers.count1))
-                            .font((.system(size: 50, weight: .heavy, design: .rounded)))
-                        Image("pb")
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .fill(.white)
+                                .opacity(0.9)
+                                .frame(width: 180, height: 90)
+                                .cornerRadius(100)
+                                .position(x: -100, y: 330)
+                                .padding(10)
+                                .position(x: 290, y: -50)
+                            ClockView1()
+                                .position(x: 80, y: 80)
+                        }
+                                
+                        
+                        HStack{
+                            Text(String(settingOfPlayers.count2))
+                                .font((.system(size: 50, weight: .heavy, design: .rounded)))
+                            Image("pb")
+                        }
+                        .position(x: 120, y: -235)
+                        
                     }
-                    .position(x: 130, y: 180)
+                       
+
                 }
-                Spacer()
-                       }
                 
+            }
+                    
+                Spacer()
+            
                 TableView()
                     .padding(50)
             
@@ -67,18 +89,35 @@ struct thirdview: View {
                                    .fill(.white.opacity(0.9))
                                    .frame(width: 100, height: 100)
                                
-                               Image(powerOfPlayers.Power2.rawValue)
+                               Image(settingOfPlayers.Power2.rawValue)
                                
                                
                            }
 //            )
-                .position(x: 360, y: 710)
-                HStack{
-                    Image("pp")
-                    Text(String(powerOfPlayers.count2))
-                        .font((.system(size: 50, weight: .heavy, design: .rounded)))
+                .position(x: 370, y: 700)
+                VStack{
+                    
+                    HStack{
+                        Image("pp")
+                        Text(String(settingOfPlayers.count1))
+                            .font((.system(size: 50, weight: .heavy, design: .rounded)))
+                    }
+                    .position(x: -130, y: 660)
+                    
+                    
+                    ZStack{
+                        Rectangle()
+                            .fill(.white)
+                            .opacity(0.9)
+                            .frame(width: 180, height: 90)
+                            .cornerRadius(100)
+                            .position(x: -100, y: 310)
+                            .padding(10)
+                        ClockView2()
+                            .position(x: -90, y: 320)
+                    }
+                    
                 }
-                    .position(x: -150, y: 670)
                 
             }
 
@@ -95,7 +134,7 @@ struct thirdview: View {
         static var previews: some View {
             
             thirdview()
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
                 .environmentObject(AlertMessage(titulo: "", mensagem: ""))
             
         }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BoardView5: View {
     
-    @EnvironmentObject private var powerOfPlayers: PowerOfPlayers
+    @EnvironmentObject private var settingsofPlayers: SettingsOfPlayers
     @EnvironmentObject private var alertMessage: AlertMessage
     
     @State var buttonsStates: [Bool] = [false, false, false, false, false, false, false, false]
@@ -37,9 +37,9 @@ struct BoardView5: View {
                             
                             buttonsStates[number - 1].toggle()
                             
-                            powerOfPlayers.count2 += 1
+                            settingsofPlayers.count2 += 1
                             
-                            alertMessage.setAlert2(buttonsStates: buttonsStates, number: number, player: 0)
+                            alertMessage.setAlert(buttonsStates: buttonsStates, number: number, player: 0, pawn: true)
                             
                             isShowingAlert = alertMessage.numberOfPawns == 4 ? true : false;
                             
@@ -111,7 +111,7 @@ struct BoardView5: View {
     struct BoardView5_Previews: PreviewProvider {
         static var previews: some View {
             BoardView5()
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
                 .environmentObject(AlertMessage(titulo: "", mensagem: ""))
         }
     }

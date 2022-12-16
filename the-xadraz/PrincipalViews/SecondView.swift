@@ -46,9 +46,9 @@ struct SecondView: View {
 
                 VStack {
 
-                    Image("tex1")
+                    Image("tex2")
 
-                        .position(x : 150 , y : 110 )
+                        .position(x : 180 , y : 115 )
 
                     SelectionPowerPlayer1Button()
 
@@ -56,9 +56,9 @@ struct SecondView: View {
 
                         .position(x : 200, y: 70)
 
-                    Image("tex2")
+                    Image("tex1")
 
-                        .position(x : 150 , y : 40 )
+                        .position(x : 190 , y : 50 )
 
                     
 
@@ -132,7 +132,7 @@ struct SecondView: View {
 
             SecondView()
 
-                .environmentObject(PowerOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
+                .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
 
         }
 

@@ -9,19 +9,21 @@ import SwiftUI
 
 struct SelectionTimeButtons: View {
     
+    @EnvironmentObject private var settingsOfPlayer: SettingsOfPlayers
+    
     var body: some View {
         Menu(
             content:{
                 Button(
-                    action: {},
-                    label: {Text("Sem tempo")})
+                    action: {settingsOfPlayer.setTime(time: .FiveMin)},
+                    label: {Text("5 minutos")})
                 
                 Button(
-                    action: {},
+                    action: {settingsOfPlayer.setTime(time: .FifteenMin)},
                     label: {Text("15 minutos")})
                 
                 Button(
-                    action: {},
+                    action: {settingsOfPlayer.setTime(time: .TwentyMin)},
                     label: {Text("20 minutos")})
                 
             },
@@ -33,5 +35,6 @@ struct SelectionTimeButtons: View {
 struct SelectionTimeButtons_Previews: PreviewProvider {
     static var previews: some View {
         SelectionTimeButtons()
+            .environmentObject(SettingsOfPlayers(Power1: .bombardeioDeGuerra, Power2: .bombardeioDeGuerra))
     }
 }
